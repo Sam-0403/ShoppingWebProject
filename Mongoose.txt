@@ -1,0 +1,24 @@
+// 1.安裝Mongoose
+// npm install --save mongoose
+
+// 2.引入mongoose
+const mongoose = require("mongoose");
+
+// 3.連接MongoDB數據庫
+// mongoose.connect('mongodb://數據庫IP位址:端口號/數據庫名');  (27017為默認，可省略)
+mongoose.connect('mongodb://127.0.0.1:27017/test');
+
+// 4.監聽MongoDB的連接狀態
+// 在mongoose中有一屬性為connection，可用以監聽數據庫的連接與斷開
+mongoose.connection.once("open", () => {
+    console.log("MongoDB Connection Success!!");
+});
+mongoose.connection.once("close", () => {
+    console.log("MongoDB Connection Closed!!");
+});
+
+// 5.斷開數據庫連接(一般不使用)
+// mongoose.disconnect();
+mongoose.disconnect();
+
+// 6.Schema -> Model -> (Document)

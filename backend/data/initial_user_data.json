@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Sam0403",
+        "email":
+            "sam22187212@gmail.com",
+        "password":
+            "samsam22187212",
+        "isAdmin": true,
+        "status": "Active",
+        "cartProduct": [],
+        "cartPrice": [],
+        "cartQuantity": []
+    },
+    {
+        "name": "Admin",
+        "email":
+            "none@email.com",
+        "password":
+            "admin__admin",
+        "isAdmin": true,
+        "status": "Active",
+        "cartProduct": [],
+        "cartPrice": [],
+        "cartQuantity": []
+    }
+]
